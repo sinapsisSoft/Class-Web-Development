@@ -1,0 +1,30 @@
+
+
+input{
+    border-radius: 10px;
+    border: solid 1px rgb(177, 166, 166);
+    margin: 2px;
+    padding: 2px;
+    font-size: 14px;
+    width: 100%;
+}
+#occupation{
+    background-color: rgb(255, 0, 157);
+    color: white;
+   
+}
+#submit{
+    background: black;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+
+select{
+    width: 100%;
+    background-color: wheat;
+}
+.table{
+    width: auto;
+    margin: auto;
+}
