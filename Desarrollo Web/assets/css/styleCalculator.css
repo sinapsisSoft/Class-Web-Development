@@ -1,0 +1,58 @@
+.container {
+    width: 40%;
+    background: #f1f1f1;
+    margin: auto;
+    border: solid 0.5px;
+    box-shadow: 0px 4px 10px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.container label {
+
+    width: 90%;
+    height: 30px;
+    background: #f1f1f1;
+    margin: auto;
+    text-align: right;
+    display: block;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#label_ope {
+    font-size: 15px; 
+    color: gray;
+
+}
+
+.container table {
+    margin: auto;
+}
+.table-result{
+    width: 100%;
+}
+.container button {
+    width: 100%;
+}
+.tr-table td{
+    width: 100px;
+    height: 50px;
+}
+button{
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    background: #e4dddd;
+    
+}
+button:hover{
+   
+    padding: 19px;
+    background: #242323;
+    box-shadow: 0px 3px 5px;
+    color: rgb(243, 240, 240);
+    font-weight: bold;
+    
+}

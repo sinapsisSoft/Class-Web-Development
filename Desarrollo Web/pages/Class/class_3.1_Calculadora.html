@@ -1,96 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-     <!--JAVASCRIP -->
-     <script>
-
-        /*Variables*/
-        var x=0;
-        let y=0;
-        var res=0;
-        //Funciones
-        function suma(x,y){
-           res=x+y;
-        }
-        function resta(x,y){
-            res=x-y;
-        }
-        function mul(x,y){
-            res=x*y;
-        }
-        function div(x,y){
-            if(x==0 || y==0){
-               
-                //debugger;
-                return false;
-            }else{
-                res=x/y;
-                return true;
-            }
-            
-            
-        }
-        function mostrar(){
-            alert("La respuesta es :"+ res);
-            var objLabel=document.getElementById('label_res');
-            objLabel.innerHTML=res;
-        }
-        
-       function getDataBtn(id){
-         
-         var objBtn=document.getElementById(id); 
-        
-         x=parseInt(objBtn.value);
-        
-         if(div(5,x)){
-            mostrar();
-           
-         }else{
-            alert("valide la información");
-            //debugger;
-         }
-         
-       }
-        
-    </script>
+    <!--JAVASCRIP--> 
+    <script src="../../assets/js/functions.js"></script>
+     <!--CSS -->
+    <link rel="stylesheet" href="../../assets/css/styleCalculator.css">
+  
 </head>
-<body>
-    
-    <table>
-        <tr>
-            <td class="4">
-                <label id="label_res" >0.0</label>
-            </td>
-        </tr>
-        <tr>
-            <td><button value="7" id="btn_7" onclick="getDataBtn(this.id)" >7</button></td>
-            <td><button value="8" id="btn_8" onclick="getDataBtn(this.id)">8</button></td>
-            <td><button value="9" id="btn_9" onclick="getDataBtn(this.id)">9</button></td>
-            <td><button value="x" id="btn_x" onclick="getDataBtn(this.id)">X</button></td>
-        </tr>
-        <tr>
-            <td><button value="4" id="btn_4"onclick="getDataBtn(this.id)" >4</button></td>
-            <td><button value="5" id="btn_5" onclick="getDataBtn(this.id)">5</button></td>
-            <td><button value="6" id="btn_6" onclick="getDataBtn(this.id)">6</button></td>
-            <td><button value="-" id="btn_-" onclick="getDataBtn(this.id)">-</button></td>
-        </tr>
-        <tr>
-            <td><button value="1" id="btn_1" onclick="getDataBtn(this.id)">1</button></td>
-            <td><button value="2" id="btn_2" onclick="getDataBtn(this.id)">2</button></td>
-            <td><button value="3" id="btn_3" onclick="getDataBtn(this.id)">3</button></td>
-            <td><button value="+" id="btn_+" onclick="getDataBtn(this.id)">+</button></td>
-        </tr>
-        <tr>
-            <td><button value="00"id="btn_00" onclick="getDataBtn(this.id)" >00</button></td>
-            <td><button value="0" id="btn_0" onclick="getDataBtn(this.id)">0</button></td>
-            <td><button value="." id="btn_."onclick="getDataBtn(this.id)" >.</button></td>
-            <td><button value="=" id="btn_=" onclick="getDataBtn(this.id)">=</button></td>
-        </tr>
 
-    </table>
+
+<body>
+    <div class="container">
+        <h6 style="margin: 5px;padding: 4px;">CALCULADORA</h6>
+        <table class="table-result">
+            <tr>
+                <td>  <label id="label_ope"></label></td>
+            </tr>
+            <tr>
+                <td><label id="label_res">0</label></td>
+            </tr>
+        </table>
+        <table>
+            <tr class="tr-table">
+                <td colspan="2" ><button title="CE" value="CE" id="btn_CE" onclick="getDataBtn(this.id)">CE</button></td>
+                <td colspan="2"><button value="C" id="btn_C" onclick="getDataBtn(this.id)">C</button></td>
+            </tr>
+            <tr>
+                <td><button value="7" id="btn_7" onclick="getDataBtn(this.id)">7</button></td>
+                <td><button value="8" id="btn_8" onclick="getDataBtn(this.id)">8</button></td>
+                <td><button value="9" id="btn_9" onclick="getDataBtn(this.id)">9</button></td>
+                <td><button value="*" id="btn_x" onclick="getDataBtn(this.id)">X</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" id="btn_4" onclick="getDataBtn(this.id)">4</button></td>
+                <td><button value="5" id="btn_5" onclick="getDataBtn(this.id)">5</button></td>
+                <td><button value="6" id="btn_6" onclick="getDataBtn(this.id)">6</button></td>
+                <td><button value="-" id="btn_-" onclick="getDataBtn(this.id)">-</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" id="btn_1" onclick="getDataBtn(this.id)">1</button></td>
+                <td><button value="2" id="btn_2" onclick="getDataBtn(this.id)">2</button></td>
+                <td><button value="3" id="btn_3" onclick="getDataBtn(this.id)">3</button></td>
+                <td><button value="+" id="btn_+" onclick="getDataBtn(this.id)">+</button></td>
+            </tr>
+            <tr>
+                <td><button value="00" id="btn_00" onclick="getDataBtn(this.id)">00</button></td>
+                <td><button value="0" id="btn_0" onclick="getDataBtn(this.id)">0</button></td>
+                <td><button value="." id="btn_." onclick="getDataBtn(this.id)">.</button></td>
+                <td><button value="/" id="btn_/" onclick="getDataBtn(this.id)">/</button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button style="width: 100%;" value="=" id="btn_="
+                        onclick="getDataBtn(this.id)">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
