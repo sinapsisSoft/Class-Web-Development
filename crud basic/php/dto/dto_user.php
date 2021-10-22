@@ -2,38 +2,39 @@
 #Author: DIEGO CASALLAS
 #Date: 08/10/2021
 #Description : Is DTO User
-class DtoUser
-{
+class DtoUser{
+
     private $User_id;
     private $User_name;
     private $User_email;
-    private $Stat_id;
-    private $User_telephone;
-
+    private $User_phone;
 
     public function __construct()
     {
-
-    }
-    public function __setUser($id,$name, $email, $state, $telephone)
-    {
-        $this->User_name = $name;
-        $this->User_email = $email;
-        $this->Stat_id = $state;
-        $this->User_telephone = $telephone;
-        $this->User_id = $id;
+        
     }
 
-    public function __getUser()
-    {
-        $objUser = new DtoUser();
+    public function __setUser($id,$name,$email,$phone){
+
+        $this->User_id=$id;
+        $this->User_name=$name;
+        $this->User_email=$email;
+        $this->User_phone=$phone;
+
+    }
+
+    public function __getUser(){
+
+        $objUser=new DtoUser();
         $objUser->__getId();
         $objUser->__getName();
         $objUser->__getEmail();
-        $objUser->__getStat_id();
-        $objUser->__getTelephone();
+        $objUser->__getPhone();
+
         return $objUser;
+
     }
+
     //SET User
     public function __setId($id)
     {
@@ -48,14 +49,9 @@ class DtoUser
         $this->User_email = $email;
     }
     
-    public function __setStat_id($stat_id)
-    {
-        $this->Stat_id = $stat_id;
-    }
-    
     public function __setTelephone($telephone)
     {
-        $this->User_telephone = $telephone;
+        $this->User_phone = $telephone;
     }
     
     //GET User
@@ -72,18 +68,13 @@ class DtoUser
     {
         return $this->User_email ;
     }
-   
-    public function __getStat_id()
+    public function __getPhone()
     {
-        return $this->Stat_id;
-    }
-    
-
-    public function __getTelephone()
-    {
-        return $this->User_telephone;
+        return $this->User_phone ;
     }
   
+    
+
 }
 
 ?>
