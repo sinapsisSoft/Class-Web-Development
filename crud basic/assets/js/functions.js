@@ -128,7 +128,7 @@ function listUser(id, idModal) {
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 viewModal(idModal,true);
-                sendDataForm(JSON.parse(xhttp.responseText));
+            sendDataForm(JSON.parse(xhttp.responseText));
             }
         }
         Json = '{"GET":"LIST_USER","id":"' + id + '"}';

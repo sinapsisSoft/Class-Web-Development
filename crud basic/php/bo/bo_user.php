@@ -89,7 +89,7 @@ if (isset($data->POST)) {
         echo $obj->newUser($data->id, $data->name, $data->email, $data->phone);
     }
 
-    if ($data->POST == "DELETE") {
+    if ($data->POST == "DELElTE") {
         echo $obj->deleteUser($data->id);
     }
     if ($data->POST == "PUT") {
