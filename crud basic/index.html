@@ -4,38 +4,89 @@
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+      <style>
+        .menu{
+          text-align: center;
+     
+        }
+        .menu .card{
+          text-align: center;
+          background: #babad7bf;
+        }
+        .menu .card:hover{
+          
+          background: #8ec2adbf;
+          width: 95%;
+        }
+        .menu i{
+          font-size: 50px;
+          cursor: pointer;
+        }
+      </style>
 
   </head>
   <body>
-
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="pages/user/user.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proveedores</a>
+        </li>
+        
+      </ul>
+    </nav>
     <div class="container">
-      <form>
-        <div class="mb-3 row">
-          <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-          <div class="col-sm-1-12">
-            <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week" class="form-control" name="inputName" id="inputName" placeholder="">
+      <div class="row ">
+        <div class="col-4 mx-auto menu">
+
+          <div class="card" style="width: 100%;">
+            <a href="pages/user/user.html"><i class="bi bi-person-bounding-box"></i></a>
+            <div class="card-body">
+              <p class="card-text">USUARIO</p>
+            </div>
           </div>
         </div>
-        <fieldset class="mb-3 row">
-          <legend class="col-form-legend col-sm-1-12">Group name</legend>
-          <div class="col-sm-1-12">
-            
-          </div>
-        </fieldset>
-        <div class="mb-3 row">
-          <div class="offset-sm-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Action</button>
+        <div class="col-4 mx-auto menu">
+
+          <div class="card" style="width: 100%;">
+            <i class="bi bi-building"></i>
+            <div class="card-body">
+              <p class="card-text">PROVEEDORES</p>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
+        <div class="col-4 mx-auto menu">
+
+          <div class="card" style="width: 100%;">
+            <i class="bi bi-basket-fill"></i>
+            <div class="card-body">
+              <p class="card-text">PRODUCTOS</p>
+            </div>
+          </div>
+        </div>
       
+      </div>
+    </div>
+
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
   </body>
 </html>
