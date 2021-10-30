@@ -1,0 +1,106 @@
+.container {
+    width: auto;
+    background: #f0e9e9d6;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn input {
+    cursor: pointer;
+    width: 50px;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-left {
+
+    display: inline-block;
+    position: relative;
+    bottom: 50%;
+
+}
+
+.btn-right {
+    display: inline-block;
+    position: relative;
+    bottom: 50%;
+}
+
+.imgFullScrem {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background: #333131ab;
+    display: none;
+}
+
+.imgFullScrem img {
+    width: 100%;
+    max-width: 90%;
+    max-height: 90%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+}
+
+.btnClose input {
+    width: 40px;
+    height: 40px;
+    background: rgb(201, 38, 38);
+    float: right;
+    margin: 40px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnClose input:hover {
+    width: 48px;
+    height: 48px;
+    background: rgb(71, 69, 69);
+}
+
+.img {
+    width: 50%;
+}
+
+.textImg {
+    font-size: 30px;
+    text-shadow: 0px 0px 3px #e8dddd;
+    text-transform: uppercase;
+}
+
+.fade{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+}
+
+.fade img {
+    opacity: 0;
+}
