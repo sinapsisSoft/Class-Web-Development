@@ -20,7 +20,7 @@ class Users{
 
         try{
             $conn=$this->objConnections->connect();
-            $sqlQuery="SELECT * FROM `user` WHERE 1";
+            $sqlQuery="SELECT * FROM `user` WHERE `typeUser`=2";
             if($conn!=null){
 
                 if($result=$conn->query($sqlQuery)){
