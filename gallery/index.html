@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link href="assets/css/style.css" rel="stylesheet">
+      
+    </head>
+
+
+    <body>
+        <div class="container">
+            <!--Contenedor-->
+            <div class="containerImg">
+                <!--Galeria-->
+                <div>
+                    <img class="img" src="assets/img/img_1.jpg" id="img"
+                        onclick="openModal(this.src)">
+                    <div>
+                        <p class="textImg" id="textImg">Imagen Uno</p>
+                    </div>
+                </div>
+
+                <!--Boton Izquierdo-->
+                <div class="btn btn-left">
+                    <input type="button" onclick="selectImg(1)" value="<">
+                </div>
+                <!--Botones de Selección-->
+                <div style="display: inline-block;">
+                    <div id="grupRadioImg">
+
+                    </div>
+                </div>
+                <!--Boton Derecho-->
+                <div class="btn btn-right">
+                    <input type="button" value=">" onclick="selectImg(0)">
+                </div>
+                <!--Fin Galeria-->
+            </div>
+            <!--Fin Contenedor-->
+            <!--Contenedor Full Screm   -->
+            <div class="imgFullScrem" id="FullScrem">
+                <div class="btnClose"><input type="button" value="X"
+                        onclick="closeModal()"></div>
+                <img src="" id="imgAux">
+
+            </div>
+            <!--Fin Contenedor Full Screm   -->
+        </div>
+
+        <script src="assets/js/functions.js"></script>
+        <script>
+        createGroup();
+    </script>
+    </body>
+
+</html>

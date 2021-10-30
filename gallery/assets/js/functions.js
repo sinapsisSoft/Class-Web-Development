@@ -1,13 +1,13 @@
 var arrayImg = new Array("img_1", "img_2", "img_3", "img_4", "img_5", "img_6", "img_7");
 var arrayTextImg = new Array("Imagen Uno", "Imagen Dos", "Imagen Tres", "Imagen Cuatro", "Imagen Cinco", "Imagen Seis", "Imagen Siete");
 
-debugger
+
 var dataSelect = 0;
 var objImg = document.getElementById('img');
 var objImgAux = document.getElementById('imgAux');
 var objTextImg = document.getElementById('textImg');
 var ext = ".jpg";
-var routeImg = "../assets/img/";
+var routeImg = "assets/img/";
 
 function closeModal() {
     document.getElementById("FullScrem").style.display = "none";
