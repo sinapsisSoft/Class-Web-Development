@@ -54,12 +54,12 @@ function getDataStorage(){
       
         if(localStorage.getItem('email')){
             pages="home.html";
-            window.location.assign(pages);
+           
         }else{
             pages="login.html";
-            window.location.assign(pages);
+          
         }
-
+  window.location.assign(pages);
         
         
     }
